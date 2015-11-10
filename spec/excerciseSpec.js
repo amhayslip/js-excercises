@@ -1,36 +1,31 @@
-////////// Excercise 1 //////////
-var person = {
-	eat: function () {
-		this.hungry = !this.hungry;
-	}
+// Finish both the Beer and User constructor functions to make all the tests below pass. Do no alter any other code.
+
+var Beer = function (name) {
+	// Write code here to make the tests pass
 };
 
-person.eat();
+var User = function (name) {
+	// Write code here to make the test pass
+};
 
-// Add a default attribute to the person object to make the test below pass
+var beer1 = new Beer("Tuborg");
+var aaron = new User("Aaron");
+beer1.addReview(aaron, "This beer is refreshing!");
 
-describe("Person", function () {
-  it("is not hungry after she eats, but is before", function () {
-    expect(person.hungry).toEqual(false);
+describe("beer1", function () {
+  it("is named Tuborg", function () {
+    expect(beer1.name).toEqual("Tuborg");
+  });
+  it("has one review", function () {
+    expect(beer1.reviews.length).toEqual(1);
+  });
+  it("has one review by Aaron", function () {
+    expect(beer1.reviews[0].user.name).toEqual("Aaron");
   });
 });
 
-////////// Excercise 2 //////////
-var bank = {
-	accounts: [
-		{ name: "Aaron", balance: 200 },
-		{ name: "Avi", balance: 5 },
-		{ name: "Narkis", balance: 500 }
-	],
-	deposit: function (index, amount) {
-		this.accounts[index].balance += amount;
-	}
-}
-
-// Write code here to make the test below pass. Do no change any code above.
-
-describe("Bank", function () {
-  it("account for Aaron has an increased balance", function () {
-    expect(bank.accounts[0].balance).toEqual(300);
+describe("aaron", function () {
+  it("is named Aaron", function () {
+    expect(aaron.name).toEqual("Aaron");
   });
 });
