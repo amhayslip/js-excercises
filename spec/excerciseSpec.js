@@ -1,40 +1,16 @@
 ////////// Excercise 1 //////////
-var dog = {
-  name: "Rover",
-  legs: 4
-};
-
-// Write code here to make the test below pass
-
-describe("The Dog", function () {
-  it("Has a name and a color", function () {
-    expect(dog['name']).toEqual("Rover");
-    expect(dog['color']).toEqual("brown");
-  });
-});
-
-////////// Excercise 2 //////////
-
-// Write code here to make the test below pass
-
-describe("The Person", function () {
-  it("Has a name and an age", function () {
-    expect(person['name']).toBeDefined();
-    expect(person['age']).toBeDefined();
-  });
-});
-
-////////// Excercise 3 //////////
-var book = {
-	title: "The Hunger Games",
-	author: "J.K. Rowling"
+var posts = {
+  comments: [
+    {user: "Aaron", message: "Hey there!"},
+    {user: "Avi", message: "Man, this course is awesome!"},
+    {user: "Narkis", message: "It's pretty good, but whats your vision?"}
+  ]
 }
 
-// Write code here to make the test below pass... do not change the code above
+// Write code here to make the test below pass. Hint: you will need to "push" a new object into the comments array.
 
-describe("The Hunger Games", function () {
-	it("Has correct author", function () {
-		expect(book.title).toEqual("The Hunger Games");
-		expect(book.author).toEqual("Suzanne Collins");
-	});
-})
+describe("Posts", function () {
+  it("Has a comment from Alex", function () {
+    expect(posts.comments[3].user).toEqual("Alex");
+  });
+});
