@@ -27,7 +27,7 @@ describe("The Person", function () {
 ////////// Excercise 3g //////////
 var book = {
 	title: "The Hunger Games",
-	author: "J.K. Rowling "
+	author: "J.K. Rowling"
 }
 
 // Write code here to make the test below pass... do not change the code above
