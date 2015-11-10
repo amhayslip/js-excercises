@@ -24,7 +24,7 @@ describe("The Person", function () {
   });
 });
 
-////////// Excercise 3g //////////
+////////// Excercise 3 //////////
 var book = {
 	title: "The Hunger Games",
 	author: "J.K. Rowling"
