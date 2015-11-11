@@ -10,7 +10,8 @@ var User = function (name) {
 
 var beer1 = new Beer("Tuborg");
 var aaron = new User("Aaron");
-beer1.addReview(aaron, "This beer is refreshing!");
+
+// Write code here to make the test pass
 
 describe("beer1", function () {
   it("is named Tuborg", function () {
