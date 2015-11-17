@@ -1,32 +1,23 @@
-// Finish both the Beer and User constructor functions to make all the tests below pass. Do no alter any other code.
-
-var Beer = function (name) {
-	// Write code here to make the tests pass
-};
-
-var User = function (name) {
-	// Write code here to make the test pass
-};
-
-var beer1 = new Beer("Tuborg");
-var aaron = new User("Aaron");
-
-// Write code here to make the test pass
-
-describe("beer1", function () {
-  it("is named Tuborg", function () {
-    expect(beer1.name).toEqual("Tuborg");
+describe("Button Click Event Tests", function() {
+  var spyEvent;
+   
+  beforeEach(function() {
+    setUpHTMLFixture();
   });
-  it("has one review", function () {
-    expect(beer1.reviews.length).toEqual(1);
+      
+  it ("should invoke the btnShowMessage click event.", function() {
+    spyEvent = spyOnEvent('#btnShowMessage', 'click');
+    $('#btnShowMessage').trigger( "click" );
+       
+    expect('click').toHaveBeenTriggeredOn('#btnShowMessage');
+    expect(spyEvent).toHaveBeenTriggered();
   });
-  it("has one review by Aaron", function () {
-    expect(beer1.reviews[0].user.name).toEqual("Aaron");
-  });
-});
-
-describe("aaron", function () {
-  it("is named Aaron", function () {
-    expect(aaron.name).toEqual("Aaron");
+      
+  it ("should invoke the btnHideMessage click event.", function() {
+    spyEvent = spyOnEvent('#btnHideMessage', 'click');
+    $('#btnHideMessage').trigger( "click" );
+       
+    expect('click').toHaveBeenTriggeredOn('#btnHideMessage');
+    expect(spyEvent).toHaveBeenTriggered();
   });
 });
