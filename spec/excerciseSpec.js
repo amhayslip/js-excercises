@@ -7,7 +7,7 @@ var post = {
   ]
 }
 
-// Write code here to make the test below pass. Hint: you will need to "push" a new object into the comments array.
+// Write code here to make the test below pass... do not change the code above.
 
 describe("Post", function () {
   it("Has a comment from Alex", function () {
@@ -46,7 +46,7 @@ var car = {
   }
 }
 
-// Write code here to make this test pass.
+// Write code here to make this test pass... do not change the code above.
 
 describe("car", function () {
   it("Is has moved forward", function () {
