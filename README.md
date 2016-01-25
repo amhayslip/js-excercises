@@ -18,6 +18,30 @@ bad
 ```javascript
 var person ="aaron"
 ```
+
+## Declaring Functions
+When declaring a function, we use spaces around the <strong>function</strong> keywork, and one after the <strong>()</strong>. Everything that goes inside the function body (inside of the brackets <strong>{}</strong>) goes on it's own line (or multiple lines depending on what your write inside the function. Everything inside the function with be indented once (use the "tab" key for this). Below are some good and bad examples.
+
+good
 ```javascript
-var cities = []
+var bark = function () {
+  console.log("woof");
+}
+```
+<br>
+bad
+```javascript
+var bark = function () {console.log("woof");
+}
+```
+<br>
+bad
+```javascript
+var bark = function(){
+console.log("woof");}
+```
+
+bad
+```javascript
+var bark = function(){console.log("woof");}
 ```
