@@ -40,7 +40,7 @@ bad
 var bark = function(){
 console.log("woof");}
 ```
-
+<br>
 bad
 ```javascript
 var bark = function(){console.log("woof");}
@@ -54,13 +54,11 @@ good
 var cities = ['tel aviv', 'berlin', 'new york'];
 ```
 <br>
-
 bad
 ```javascript
 var cities = ['tel aviv','berlin','new york'];
 ```
 <br>
-
 good
 ```javascript
 var posts = [
@@ -70,7 +68,6 @@ var posts = [
 ];
 ```
 <br>
-
 bad
 ```javascript
 var posts = [
