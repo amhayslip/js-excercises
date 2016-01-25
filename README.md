@@ -20,7 +20,7 @@ var person ="aaron"
 ```
 
 ## Declaring Functions
-When declaring a function, we use spaces around the <strong>function</strong> keywork, and one after the <strong>()</strong>. Everything that goes inside the function body (inside of the brackets <strong>{}</strong>) goes on it's own line (or multiple lines depending on what your write inside the function. Everything inside the function with be indented once (use the "tab" key for this). Below are some good and bad examples.
+When declaring a function, we use spaces around the <strong>function</strong> keywork, and one after the <strong>()</strong>. Everything that goes inside the function body (inside of the brackets <strong>{}</strong>) goes on it's own line (or multiple lines depending on what your write inside the function. Everything inside the function with be indented once (use the "tab" key for this). Below are some good and bad examples:
 
 good
 ```javascript
@@ -45,3 +45,36 @@ bad
 ```javascript
 var bark = function(){console.log("woof");}
 ```
+
+## Declaring Arrays
+Items inside of the array should be separated by one space. An array can either be on one line, or multiple depending on it's size and contents. Good and bad examples are below:
+
+good
+```javascript
+var cities = ['tel aviv', 'berlin', 'new york'];
+```
+<br>
+
+bad
+```javascript
+var cities = ['tel aviv','berlin','new york'];
+```
+<br>
+
+good
+```javascript
+var posts = [
+  {user: "Aaron", message: "hello world!"},
+  {user: "Alex", message: "hey world!"},
+  {user: "Avi", message: "sup world!"}
+];
+```
+<br>
+
+bad
+```javascript
+var posts = [
+  {user: "Aaron", message: "hello world!"}, {user: "Alex", message: "hey world!"}, {user: "Avi", message: "sup world!"}
+];
+```
+<br>
