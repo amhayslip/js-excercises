@@ -23,10 +23,12 @@ good
 var cities = [];
 ```
 
+
 bad
 ```javascript
 var cities=[];
 ```
+
 
 bad
 ```javascript
