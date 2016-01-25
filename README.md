@@ -1,4 +1,6 @@
-# javascript beginners style guide
+# Javascript Beginners Style Guide
+
+
 
 ```
 var hey = {};
