@@ -12,24 +12,22 @@ bad
 ```javascript
 var person="aaron";
 ```
-
+<br>
 bad
 ```javascript
 var person ="aaron"
 ```
-
+<br>
 good
 ```javascript
 var cities = [];
 ```
-
-
+<br>
 bad
 ```javascript
 var cities=[];
 ```
-
-
+<br>
 bad
 ```javascript
 var cities = []
